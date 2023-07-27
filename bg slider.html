@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: arial;
+        }
+
+        .container {
+            position: absolute;
+            left: 0;
+            top: 0%;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            animation: animate 16s ease-out infinite;
+            background-repeat: no-repeat;
+        }
+
+        @keyframes animate {
+
+            0%,
+            100% {
+                background-image: url(images/1.jpg);
+            }
+
+            25% {
+                background-image: url(images/2.jpg);
+            }
+
+            50% {
+                background-image: url(images/3.jpg);
+            }
+
+            75% {
+                background-image: url(images/4.jpg);
+            }
+        }
+
+        .details {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            
+        }
+
+        .details h1 {
+            color: white;
+            font-size: 60px;
+            letter-spacing: 16px;
+            text-transform: uppercase;
+        }
+
+        .details h2 {
+            color: #ffffff;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        .details a,
+        button {
+            border: none;
+            background: #0984e3;
+            padding: 10px 24px;
+            margin-left: 1cm;
+            color: white;
+            font-size: 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .details p{
+           
+            color: white;
+            border-radius: 20px;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            background-color:#000000;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="outer">
+            <div class="details">
+                <h1> Safari</h1>
+                <h2>Welcome to the Land of Safari</h2>
+                <a onClick="document.location='login.html#login';">Login</a>
+                <a onClick="document.location='login.html#signin';">Sign In</a>
+                <h2 style="color: black;"> <i>“If there were one more thing I could do, it would be to go on safari once again.”</i></h2>
+                <p>Live  <span class="dot"></span>  Learn  <span class="dot"></span>  Explore</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
